@@ -1,0 +1,40 @@
+{
+  "name": "react-styled-components-for-designers",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0",
+    "styled-components": "^3.0.2",
+    "styled-reset": "^1.0.1"
+  },
+  "scripts": {
+    "start": "code . && react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.35",
+    "@types/react-dom": "^16.0.3",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.1.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "prettier": "^1.10.2",
+    "react-app-rewire-styled-components": "^3.0.0",
+    "react-app-rewired": "^1.4.0",
+    "typescript": "^2.6.2",
+    "typescript-styled-plugin": "^0.4.0"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true
+  }
+}
