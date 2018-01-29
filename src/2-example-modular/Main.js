@@ -1,28 +1,17 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Row, Col, media } from 'styled-bootstrap-grid'
-import { MAX_WIDTH } from 'styles'
+import { Row, Col } from 'styled-bootstrap-grid'
 import Artwork from './Artwork'
 import Bio from './Bio'
 
 export default function Main() {
   return (
-    <MainContainer>
+    <Col className="Main">
       <Row>
         <Artwork />
       </Row>
       <Row>
         <Bio />
       </Row>
-    </MainContainer>
+    </Col>
   )
 }
-
-const MainContainer = styled(Col)`
-  min-height: 85vh;
-
-  ${media.giant`
-    margin: auto;
-    max-width: ${MAX_WIDTH}
-  `};
-`

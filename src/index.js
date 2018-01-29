@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Example1 from './1-example-css'
 import Example2 from './2-example-modular'
+import Example3 from './3-example-styled-components'
 
 function getExample(exampleNumber) {
   switch (exampleNumber) {
@@ -10,14 +11,15 @@ function getExample(exampleNumber) {
       return <Example1 />
     case 2:
       return <Example2 />
+    case 3:
+      return <Example3 />
     default:
       throw new Error(`Invalid example: ${exampleNumber}`)
   }
 }
 
-ReactDOM.render(getExample(1), document.getElementById('root'))
+ReactDOM.render(getExample(3), document.getElementById('root'))
 
-// Enable hot-reloading during dev
 if (module.hot) {
-  module.hot.accept()
+  module.hot.accept() // Enable hot-reloading during dev
 }
