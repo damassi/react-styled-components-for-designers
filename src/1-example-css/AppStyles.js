@@ -2,14 +2,13 @@ import styled from 'styled-components'
 import { colors } from 'styles'
 import { media } from 'styled-bootstrap-grid'
 
-export const AppStyles = styled.div`
+export default styled.div`
   .Nav {
     align-items: center;
     border-bottom: 1px solid ${colors.lightGrey};
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    text-transform: uppercase;
 
     a {
       text-decoration: none;

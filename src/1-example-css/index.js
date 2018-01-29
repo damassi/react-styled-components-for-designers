@@ -1,6 +1,6 @@
 import React from 'react'
-import { AppStyles } from './styles'
 import { Container, Row, Col } from 'styled-bootstrap-grid'
+import AppStyles from './AppStyles'
 
 export default function ArtworkPage() {
   return (

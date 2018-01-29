@@ -1,16 +1,18 @@
-# React and Styled Components Examples for Designers
+# React and Styled Components for Designers
 
 ### WIP
 
-This repo contains three example approaches (or phases) for building modern static layouts using [React.js](https://reactjs.org/) and [Styled Components](https://www.styled-components.com/). The first mimics traditional approaches to layout and css, with a single component being mounted containing all of the HTML laid out and styled via a stylesheet. The second phase takes the first a bit further and breaks the HTML apart into individual files / components, showing how a flat file is broken up into multiple files. The third example modifies the second by introducing Styled Components for handling CSS. The first example is typically what is built first; once the layout is responsive and looks right then the second and third phases become production work as markup and CSS is moved from the main file into individual component-files one-by-one.
+This repo contains three example approaches (or phases) for building modern static layouts using [React.js](https://reactjs.org/) and [Styled Components](https://www.styled-components.com/). The [first](https://github.com/damassi/react-styled-components-for-designers/tree/master/src/1-example-css) mimics traditional approaches to layout and css, with a single component being mounted containing all of the HTML laid out and styled via a stylesheet. The [second phase](https://github.com/damassi/react-styled-components-for-designers/tree/master/src/2-example-modular) takes the first a bit further and breaks the HTML apart into individual files / components, showing how a flat file is broken up into multiple files. The [third phase](https://github.com/damassi/react-styled-components-for-designers/tree/master/src/3-example-styled-components) modifies the second by introducing common Styled Components patterns for handling CSS. The first example is typically what is built first; once the layout is responsive and looks right then the second and third phases become production work as markup and CSS is moved from the main file into individual component-files one-by-one.
 
-From a design-to-engineering hand-off perspective the first example is typically sufficient. However, the second and third examples are included so that the reader may gain a greater insight into how components finally appear in real-world applications.
+From a design-to-engineering hand-off perspective the first example approach is typically sufficient. However, the second and third examples are included so that the reader may gain a greater insight into how components finally appear in real-world applications.
+
+Building upon [`create-react-app`](https://github.com/facebook/create-react-app) and [VSCode](https://code.visualstudio.com/) as a development environment, this project aims to make the barrier of entry as low as possible while providing for the fastest possible iteration times. Also included is an excellent 12-column grid-system based on [Bootstrap](https://github.com/dragma/styled-bootstrap-grid).
 
 ### Requisites
 
 A basic understanding of HTML + CSS.
 
-### Installation
+### First Time Installation
 
 1. Install [VSCode](https://code.visualstudio.com/)
 1. Install Node.js: https://nodejs.org/en/download/
@@ -24,7 +26,7 @@ yarn install
 yarn start
 ```
 
-This should launch a web browser pointed at http://localhost:3000. Changes to the source-code will be immediately reflected in the browser, without a refresh. Toggle examples by modifying the number [located here](https://github.com/damassi/react-styled-components-for-designers/blob/master/src/index.js#L18).
+This should launch a web browser pointed at http://localhost:3000, as well as VSCode. Changes to source-files will be immediately reflected in the browser, without a refresh.
 
 Back in VSCode, you should see this pop up:
 
@@ -35,6 +37,8 @@ Be sure to click 'Install All' and once that's complete run `cmd+shift+p > reloa
 <img width="458" alt="screen shot 2018-01-28 at 4 24 59 pm" src="https://user-images.githubusercontent.com/236943/35489151-da6e5608-0447-11e8-82d9-050f69f5de0e.png">
 
 You can open this panel by selecting `View > Problems` from the menu bar.
+
+> **Once the one-time-only setup takes place all that's needed to start coding is `yarn start`. Toggle working examples by modifying the number [located here](https://github.com/damassi/react-styled-components-for-designers/blob/master/src/index.js#L21) and save.**
 
 ### A Quick Primer on React and Styled Components
 
@@ -184,7 +188,7 @@ function App() {
 }
 ```
 
-Breaking this apart a bit, what Styled Components do is allow you to assign a variable to an HTML element (in the above example its a `div`) and then pass in styles between the back-ticks. You then use this variable as a React component. Not only does this markup read very well semantically, but it allows one to easily share common properties between styles:
+Breaking this apart a bit, what Styled Components do is allow you to assign a variable to an HTML element (in the above example its a `div`, but can be anything) and then pass in styles between the back-ticks. You then use this variable as a React component. Not only does this markup read well semantically, but it allows one to easily share common properties between styles:
 
 ```javascript
 const colors = {

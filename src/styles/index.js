@@ -1,4 +1,4 @@
-export const MAX_WIDTH = '1200px'
+export const maxWidth = '1200px'
 
 export const colors = {
   darkGrey: '#444',
@@ -16,5 +16,9 @@ export const margins = {
 export const typography = {
   small: '13px',
   medium: '16px',
-  large: '26px'
+  large: '26px',
+  family: {
+    regular: 'tahoma',
+    alt: 'Roboto Condensed'
+  }
 }
