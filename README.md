@@ -15,8 +15,9 @@ A basic understanding of HTML + CSS.
 ### First Time Installation
 
 1. Install [VSCode](https://code.visualstudio.com/)
-1. Install Node.js: https://nodejs.org/en/download/
-1. Then open your terminal and enter
+2. Install VSCode shell command `code` : [Cmd + Shift + P] and search for shell.
+3. Install Node.js: https://nodejs.org/en/download/
+4. Then open your terminal and enter
 
 ```bash
 git clone git@github.com:damassi/react-styled-components-for-designers.git
