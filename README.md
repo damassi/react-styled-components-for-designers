@@ -1,7 +1,5 @@
 # React and Styled Components for Designers
 
-### WIP
-
 This repo contains three example approaches (or phases) for building modern static layouts using [React.js](https://reactjs.org/) and [Styled Components](https://www.styled-components.com/). The [first](https://github.com/damassi/react-styled-components-for-designers/tree/master/src/1-example-css) mimics traditional approaches to layout and css, with a single component being mounted containing all of the HTML laid out and styled via a stylesheet. The [second phase](https://github.com/damassi/react-styled-components-for-designers/tree/master/src/2-example-modular) takes the first a bit further and breaks the HTML apart into individual files / components, showing how a flat file is broken up into multiple files. The [third phase](https://github.com/damassi/react-styled-components-for-designers/tree/master/src/3-example-styled-components) modifies the second by introducing common Styled Components patterns for handling CSS. The first example is typically what is built first; once the layout is responsive and looks right then the second and third phases become production work as markup and CSS is moved from the main file into individual component-files one-by-one.
 
 From a design-to-engineering hand-off perspective the first example approach is typically sufficient. However, the second and third examples are included so that the reader may gain a greater insight into how components finally appear in real-world applications.
