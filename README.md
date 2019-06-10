@@ -217,8 +217,6 @@ function App() {
 
 Combining all of these things together makes for a flexible codebase as more and more things are broken apart into reusable, modular components that can be shared throughout. It also makes the development experience more convenient as the markup and corresponding styles are co-located side-by-side in the same file.
 
-### _WIP_
-
 ---
 
 (This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app))
